@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>中国历史知识测试答题</title>
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+	<style type="text/css">
+	body{
+		width: 800px;
+		margin:50px auto;
+		color:#333;
+	}
+	.demo{
+		width:760px; 
+		margin:30px auto 10px auto
+	}
+	</style>
+</head>
+
+<body>
+<div id="main">
+   <h2 class="top_title">中国历史知识测试答题</h2>
+	<div class="demo">
+		<div id='quiz-container'></div>
+	</div>
+</div>
+
+<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="jquiz.js"></script>
+<script type="text/javascript">
+var init={'questions':[{'question':'我国境内最早的人类是？','answers':['北京人','元谋人','山顶洞人','丁村人'],'correctAnswer':2},{'question':'清朝晚期,被今人誉为"开眼看世界第一人"的是谁？','answers':['魏源','龚自珍','林则徐','严复'],'correctAnswer':3},{'question':'红军长征中,哪次战役最突出反映毛泽东军事思想和指挥才能？','answers':['四渡赤水','抢渡大渡河','飞夺沪定桥 ','直罗镇战役'],'correctAnswer':1},{'question':'下列哪个国家不是联合国常任理事国之一？','answers':['英国','法国','中国','德国'],'correctAnswer':4},{'question':'秦时,人们开凿沟通湘江和漓江的运河是？','answers':['秦渠','灵渠','唐徕渠','郑国渠'],'correctAnswer':2}]};
+
+$(function(){
+	$('#quiz-container').jquizzy({
+        questions: init.questions
+    });
+});
+</script>
+</body>
+</html>
